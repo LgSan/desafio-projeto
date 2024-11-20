@@ -1,39 +1,40 @@
-const personagem = 'arqueiro';
+const personagem = 'Goku';
+const XP = 7000;
 
-const classificacao = 20000;
+let nivelHeroi;
 
 
-if (classificacao < 1000){
+if (XP < 1000){
 
-    console.log('Sua classificação é ferro');
+    nivelHeroi = 'Ferro';
 
-}else if(classificacao >=1001 && classificacao <= 2000){
+}else if(XP >=1001 && XP <= 2000){
     
-    console.log('Sua classificação é Bronze');
+    nivelHeroi = 'Bronze';
 
-}else if(classificacao >=2001 && classificacao <= 5000){
+}else if(XP >=2001 && XP <= 5000){
     
-    console.log('Sua classificação é Prata');
+    nivelHeroi = 'Prata';
 
-}else if(classificacao >=5001 && classificacao <= 7000){
+}else if(XP >=5001 && XP <= 7000){
     
-    console.log('Sua classificação é Ouro');
+    nivelHeroi = 'Ouro';;
 
-}else if(classificacao >=7001 && classificacao <= 8000){
+}else if(XP >=7001 && XP <= 8000){
     
-    console.log('Sua classificação é platina');
+    nivelHeroi = 'Platina';
 
-}else if(classificacao >=8001 && classificacao <= 9000){
+}else if(XP >=8001 && XP <= 9000){
     
-    console.log('Sua classificação é ascedente');
+    nivelHeroi = 'Ascedente';
     
-}else if(classificacao >=9001 && classificacao <= 10000){
+}else if(XP >=9001 && XP <= 10000){
     
-    console.log('Sua classificação é Imortal');
+    nivelHeroi = 'Imortal';
 
-}else if(classificacao >=10001){
+}else if(XP >=10001){
     
-    console.log('Sua classificação é radiante');
+    nivelHeroi = 'Radiante';
 
 }
-
+console.log('O heroi',personagem,'está no nivel',nivelHeroi);
